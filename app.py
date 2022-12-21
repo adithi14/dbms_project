@@ -2,10 +2,7 @@ from flask import Flask,request,render_template
 
 app=Flask(__name__)
 
-@app.route("/")
 
-def index():
-    return "index page"
 
 @app.route("/user/<Adithi>")
 def profile(Adithi):
@@ -18,6 +15,14 @@ def login():
     else:
         return show_login_form()'''
 
-@app.route("/hello")
+@app.route("/")
 def hello_world():
+    
     return render_template("index.html")
+
+@app.route("/greet")
+
+
+def greet():
+    name=request.args.get("name","everyone")
+    return render_template("greet.html",name=name)
