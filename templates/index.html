@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>hello</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="static/styles.css" rel="stylesheet">
+  </head>
+    <title>Traveasy-Home</title>
 </head>
 <body>
-    <h2> hiee there </h2>
-    <hr> 
-    <form action="/greet" method="get">
-        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
-        <input type="submit">
-    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Traveasy</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views">View Tables</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="travelrequest">Travel Request</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feedback</a>
+            </li>
+            <li class="nav-item">
+                <h4>Hello {{ person }}!</h4>
+            </li>
+
+           </ul>
+        </div>
+        <button class="btn btn-sm btn-outline-secondary" id="outbt" type="button" onclick="window.location.href='/logout';">Log Out</button>
+      </nav>
+    <h2 class="text-center">Welcome {{ person }},Logged in successfully!</h2>
+    
+    <div class="text-center">
+        <a href="/empdet"><img src="{{url_for('static', filename='emp.png')}}" class="emp"/> </a>
+        <h3>Employee Details</h3>
+        <a href="/travelrequest"> <img src="{{url_for('static', filename='travelreq.png')}}" class="treq"/> </a>
+        <h3>Travel Request</h3>
+        <a href="/localtrip"><img src="{{url_for('static', filename='localtrip.png')}}" class="loctr"/> </a>
+        <h3>Local Trip</h3>
+        <a href="outstrip"><img src="{{url_for('static', filename='outst_trip.png')}}" class="outr"/> </a>
+        <h3>Outstation Trip</h3>
+        <a href="/locexp"><img src="{{url_for('static', filename='loc_Exp.png')}}" class='exp'/> </a>
+        <h3>Local Expense</h3>
+        <a href="/outexp"><img src="{{url_for('static', filename='outstexp.png')}}" class='exp'/> </a>
+        <h3>Outstation expense</h3>
+    </div>
+
 </body>
 </html>

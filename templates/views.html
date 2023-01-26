@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="static/styles.css" rel="stylesheet">
+    <link href="static/view.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Traveasy</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="travelrequest">Travel Request</a>
+            </li> -->
+            <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/index.html';" type="button">Go back</button>
+            
+           </ul>
+        </div>
+        
+        
+      </nav>
+      <div align="center" class="viewbut">
+      <h3>View Table Values</h3>
+      <div class="emptable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displayemp';" type="button" id="eb">Employee</button>
+      </div>
+      
+      <div class="travreqtable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displaytravreq';" type="button" id="trb">Travel Request</button>
+      </div>
+      
+      <div class="loctrtable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displayloctr';" type="button" id="ltb">Local Trip</button>
+      </div>
+
+      <div class="outrtable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displayoutr';" type="button" id="otb">Outstation Trip</button>
+      </div>
+
+      <div class="lexptable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displaylocexp';" type="button" id="leb">Local expense</button>
+      </div>
+
+      <div class="oexptable">
+        <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/displayoutexp';" type="button" id="oeb">Outstation expense</button>
+      </div>
+      </div>
+</body>
+</html>

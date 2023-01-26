@@ -1,3 +1,51 @@
 body{
-    background-color: aquamarine;
+    background-color: lightblue;
+}
+
+h2{
+    padding-top:15px;
+}
+
+h3{
+    margin-top:10px;
+}
+.treq{
+    width:35%;
+    margin:50px;
+}
+.loctr{
+    width:35%;
+    margin: 50px;
+    
+}
+.outr{
+    width:32%;
+    margin:50px;
+}
+
+.exp{
+    width:30%;
+    margin:50px;
+}
+
+.emp{
+    width:30%;
+}
+
+#outbt{
+  margin-left: 10px;
+}
+
+.login{
+    margin-top:50px;
+}
+img{
+    border-radius: 25%;
+    
+    margin-bottom: 0px;
+}
+
+form{
+    text-align: center;
+    display: inline-block;
 }
